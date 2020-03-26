@@ -10,7 +10,7 @@ get Started develoing..
 $ composer install
 ```
 
-2. Edit (Custom Your Own) *Other Role* guard for these file
+2. Edit (Custom Your Own) `Other Role` guard for these file
 
 - app/Http/Controllers/Auth/LoginController
 ```
@@ -33,7 +33,7 @@ $ composer install
 26 return redirect('/other_role/dashboard');
 ```
 
-- app\Models\OtherRole (also rename filename & class name)
+- app\Models\OtherRole (`also rename filename & class name`)
 
 ```
 12 protected $table = 'otherrole';
@@ -48,14 +48,14 @@ $ composer install
 73 'other_role' => [
 ```
 
-- database\migrations\2020_03_25_232310_create_otherrole_table (also rename filename & class name)
+- database\migrations\2020_03_25_232310_create_otherrole_table (`also rename filename & class name`)
 
 ```
 16 Schema::create('otherrole', function (Blueprint $table) {
 34 Schema::dropIfExists('otherrole');  
 ```
 
-- database\seeds\OtherRoleTableSeeder (also rename filename & class name)
+- database\seeds\OtherRoleTableSeeder (`also rename filename & class name`)
 
 ```
 14 DB::table('otherrole')->insert([
@@ -70,7 +70,7 @@ $ composer install
 11 <form method="POST" action="{{ route('post.login.other.role') }}">
 ```
 
-- resources\views\page\other-role\dashboard.blade.php (renamed other-role directory)
+- resources\views\page\other-role\dashboard.blade.php (`rename other-role directory`)
 
 ```
 8 <div class="card-header">Other Role Dashboard</div>
